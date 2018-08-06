@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		04276DD62115E33400978767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276DD52115E33400978767 /* AppDelegate.swift */; };
-		04276DD82115E33400978767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276DD72115E33400978767 /* ViewController.swift */; };
+		04276DD82115E33400978767 /* signinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276DD72115E33400978767 /* signinVC.swift */; };
 		04276DDB2115E33400978767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04276DD92115E33400978767 /* Main.storyboard */; };
 		04276DDD2115E33C00978767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04276DDC2115E33C00978767 /* Assets.xcassets */; };
 		04276DE02115E33C00978767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04276DDE2115E33C00978767 /* LaunchScreen.storyboard */; };
 		04276DEB2115E33C00978767 /* uberriderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276DEA2115E33C00978767 /* uberriderTests.swift */; };
 		04276DF62115E33C00978767 /* uberriderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04276DF52115E33C00978767 /* uberriderUITests.swift */; };
+		044C2BA8211704B8000DD43E /* RiderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C2BA7211704B8000DD43E /* RiderVC.swift */; };
+		044C2BAC21171570000DD43E /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C2BAB21171570000DD43E /* DBProvider.swift */; };
+		044C2BAE211716D8000DD43E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C2BAD211716D8000DD43E /* Constants.swift */; };
+		044C2BB6211736AC000DD43E /* UberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C2BB5211736AC000DD43E /* UberHandler.swift */; };
+		04AB34EF2115F1490096CDEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AB34EE2115F1490096CDEC /* GoogleService-Info.plist */; };
+		04CC59282116FAD4003083DA /* AuthProvider .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC59272116FAD4003083DA /* AuthProvider .swift */; };
+		05300E27CCE3E31AEA103F98 /* Pods_uberriderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67ACF053872DB1337B377A6 /* Pods_uberriderTests.framework */; };
+		ABA809659E1CA2CFE0C561DA /* Pods_uberriderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A58D5CF9BEB78082382D2A5 /* Pods_uberriderUITests.framework */; };
+		ED8551362434B3C32910A92D /* Pods_uberrider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562D896FBDA542A67F9D05A6 /* Pods_uberrider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* Begin PBXFileReference section */
 		04276DD22115E33400978767 /* uberrider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uberrider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04276DD52115E33400978767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04276DD72115E33400978767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04276DD72115E33400978767 /* signinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinVC.swift; sourceTree = "<group>"; };
 		04276DDA2115E33400978767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04276DDC2115E33C00978767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04276DDF2115E33C00978767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,21 @@
 		04276DF12115E33C00978767 /* uberriderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uberriderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04276DF52115E33C00978767 /* uberriderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uberriderUITests.swift; sourceTree = "<group>"; };
 		04276DF72115E33C00978767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044C2BA7211704B8000DD43E /* RiderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderVC.swift; sourceTree = "<group>"; };
+		044C2BAB21171570000DD43E /* DBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		044C2BAD211716D8000DD43E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		044C2BB5211736AC000DD43E /* UberHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHandler.swift; sourceTree = "<group>"; };
+		04AB34EE2115F1490096CDEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04CC59272116FAD4003083DA /* AuthProvider .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthProvider .swift"; sourceTree = "<group>"; };
+		1A58D5CF9BEB78082382D2A5 /* Pods_uberriderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uberriderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44692F3B3BA1E0DD5A9C00AD /* Pods-uberrider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberrider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uberrider/Pods-uberrider.debug.xcconfig"; sourceTree = "<group>"; };
+		562D896FBDA542A67F9D05A6 /* Pods_uberrider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uberrider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811EAD42B23352FAD2BE877D /* Pods-uberriderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberriderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uberriderTests/Pods-uberriderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95BDDAFC429EBC25DD549FD4 /* Pods-uberriderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberriderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uberriderUITests/Pods-uberriderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B67ACF053872DB1337B377A6 /* Pods_uberriderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uberriderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB916BD7BF0CAAA1DE0E9C40 /* Pods-uberriderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberriderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uberriderUITests/Pods-uberriderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBC48302C83A12497278A0F0 /* Pods-uberriderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberriderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uberriderTests/Pods-uberriderTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA37E785C2889549696CFA92 /* Pods-uberrider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uberrider.release.xcconfig"; path = "Pods/Target Support Files/Pods-uberrider/Pods-uberrider.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8551362434B3C32910A92D /* Pods_uberrider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05300E27CCE3E31AEA103F98 /* Pods_uberriderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA809659E1CA2CFE0C561DA /* Pods_uberriderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +108,8 @@
 				04276DE92115E33C00978767 /* uberriderTests */,
 				04276DF42115E33C00978767 /* uberriderUITests */,
 				04276DD32115E33400978767 /* Products */,
+				85711A28584BFE0760501657 /* Pods */,
+				894129F51759FABD4D072088 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +126,12 @@
 		04276DD42115E33400978767 /* uberrider */ = {
 			isa = PBXGroup;
 			children = (
+				04CC59262116FAA4003083DA /* Plugins */,
+				04AB34EE2115F1490096CDEC /* GoogleService-Info.plist */,
+				04276E422115E6C300978767 /* Control */,
+				04276E412115E6BD00978767 /* View */,
+				04276E402115E6B100978767 /* Model */,
 				04276DD52115E33400978767 /* AppDelegate.swift */,
-				04276DD72115E33400978767 /* ViewController.swift */,
 				04276DD92115E33400978767 /* Main.storyboard */,
 				04276DDC2115E33C00978767 /* Assets.xcassets */,
 				04276DDE2115E33C00978767 /* LaunchScreen.storyboard */,
@@ -125,6 +158,63 @@
 			path = uberriderUITests;
 			sourceTree = "<group>";
 		};
+		04276E402115E6B100978767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04276E412115E6BD00978767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04276E422115E6C300978767 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				04276DD72115E33400978767 /* signinVC.swift */,
+				044C2BA7211704B8000DD43E /* RiderVC.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		04CC59262116FAA4003083DA /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				04CC59272116FAD4003083DA /* AuthProvider .swift */,
+				044C2BAB21171570000DD43E /* DBProvider.swift */,
+				044C2BAD211716D8000DD43E /* Constants.swift */,
+				044C2BB5211736AC000DD43E /* UberHandler.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		85711A28584BFE0760501657 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44692F3B3BA1E0DD5A9C00AD /* Pods-uberrider.debug.xcconfig */,
+				FA37E785C2889549696CFA92 /* Pods-uberrider.release.xcconfig */,
+				811EAD42B23352FAD2BE877D /* Pods-uberriderTests.debug.xcconfig */,
+				EBC48302C83A12497278A0F0 /* Pods-uberriderTests.release.xcconfig */,
+				CB916BD7BF0CAAA1DE0E9C40 /* Pods-uberriderUITests.debug.xcconfig */,
+				95BDDAFC429EBC25DD549FD4 /* Pods-uberriderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		894129F51759FABD4D072088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				562D896FBDA542A67F9D05A6 /* Pods_uberrider.framework */,
+				B67ACF053872DB1337B377A6 /* Pods_uberriderTests.framework */,
+				1A58D5CF9BEB78082382D2A5 /* Pods_uberriderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04276DFA2115E33C00978767 /* Build configuration list for PBXNativeTarget "uberrider" */;
 			buildPhases = (
+				9E57778764865833C9877FD7 /* [CP] Check Pods Manifest.lock */,
 				04276DCE2115E33400978767 /* Sources */,
 				04276DCF2115E33400978767 /* Frameworks */,
 				04276DD02115E33400978767 /* Resources */,
+				46F21F92276B881EFBFF2A86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04276DFD2115E33C00978767 /* Build configuration list for PBXNativeTarget "uberriderTests" */;
 			buildPhases = (
+				817EAF6959E265367865D96F /* [CP] Check Pods Manifest.lock */,
 				04276DE22115E33C00978767 /* Sources */,
 				04276DE32115E33C00978767 /* Frameworks */,
 				04276DE42115E33C00978767 /* Resources */,
@@ -167,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04276E002115E33C00978767 /* Build configuration list for PBXNativeTarget "uberriderUITests" */;
 			buildPhases = (
+				D7E5F90B6FD1C6D2EAE908F8 /* [CP] Check Pods Manifest.lock */,
 				04276DED2115E33C00978767 /* Sources */,
 				04276DEE2115E33C00978767 /* Frameworks */,
 				04276DEF2115E33C00978767 /* Resources */,
@@ -230,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04276DE02115E33C00978767 /* LaunchScreen.storyboard in Resources */,
+				04AB34EF2115F1490096CDEC /* GoogleService-Info.plist in Resources */,
 				04276DDD2115E33C00978767 /* Assets.xcassets in Resources */,
 				04276DDB2115E33400978767 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +346,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46F21F92276B881EFBFF2A86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-uberrider/Pods-uberrider-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uberrider/Pods-uberrider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817EAF6959E265367865D96F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uberriderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E57778764865833C9877FD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uberrider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E5F90B6FD1C6D2EAE908F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uberriderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04276DCE2115E33400978767 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04276DD82115E33400978767 /* ViewController.swift in Sources */,
+				04276DD82115E33400978767 /* signinVC.swift in Sources */,
+				04CC59282116FAD4003083DA /* AuthProvider .swift in Sources */,
+				044C2BAC21171570000DD43E /* DBProvider.swift in Sources */,
 				04276DD62115E33400978767 /* AppDelegate.swift in Sources */,
+				044C2BB6211736AC000DD43E /* UberHandler.swift in Sources */,
+				044C2BA8211704B8000DD43E /* RiderVC.swift in Sources */,
+				044C2BAE211716D8000DD43E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +609,7 @@
 		};
 		04276DFB2115E33C00978767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44692F3B3BA1E0DD5A9C00AD /* Pods-uberrider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +627,7 @@
 		};
 		04276DFC2115E33C00978767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA37E785C2889549696CFA92 /* Pods-uberrider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +645,7 @@
 		};
 		04276DFE2115E33C00978767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811EAD42B23352FAD2BE877D /* Pods-uberriderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +666,7 @@
 		};
 		04276DFF2115E33C00978767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBC48302C83A12497278A0F0 /* Pods-uberriderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +687,7 @@
 		};
 		04276E012115E33C00978767 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB916BD7BF0CAAA1DE0E9C40 /* Pods-uberriderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +707,7 @@
 		};
 		04276E022115E33C00978767 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BDDAFC429EBC25DD549FD4 /* Pods-uberriderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
