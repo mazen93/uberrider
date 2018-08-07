@@ -107,7 +107,7 @@ class RiderVC: UIViewController ,CLLocationManagerDelegate,MKMapViewDelegate,Ube
     
     
     
-    
+    // get location
     private func initializationLocationManager(){
         locationManager.delegate=self
         locationManager.desiredAccuracy=kCLLocationAccuracyBest
@@ -154,6 +154,7 @@ class RiderVC: UIViewController ,CLLocationManagerDelegate,MKMapViewDelegate,Ube
             if driverLocation != nil{
                 if !canCallUber{
                showRouteOnMap(pickupCoordinate: userLocation!, destinationCoordinate: driverLocation!)
+                    print(driverLocation!)
                 }
                 
             }
@@ -210,24 +211,37 @@ class RiderVC: UIViewController ,CLLocationManagerDelegate,MKMapViewDelegate,Ube
     
     @IBAction func CallUberButton(_ sender: Any) {
         
+        
+        // user location not equal nil
         if userLocation != nil {
+            
+            // if can call uber else in ride
             if canCallUber {
+                
+                
+                
                     UberHandler.Instance.requestUber(latitude: userLocation!.latitude, longitude: userLocation!.longitude)
+                
+                // update location
                 timer=Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(RiderVC.updateRiderLocation), userInfo: nil, repeats: true)
             
             
             }
-        }else{
-            riderCanceledUber=true
-            
-            // cancel order
-            // must get key
-            UberHandler.Instance.cancelUber()
-            timer.invalidate()
             
             
+            
+            else{
+                riderCanceledUber=true
+                
+                // cancel order
+                // must get key
+                UberHandler.Instance.cancelUber()
+                timer.invalidate()
+                
+                
+            }
+
         }
-        
         
         
     

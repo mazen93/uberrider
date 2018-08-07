@@ -54,6 +54,8 @@ class UberHandler {
             
         }
         
+        // End Rider Request Uber
+        
         // rider cancel uber
         DBProvider.Instance.requestRef.observe(DataEventType.childRemoved) { (snapshot:DataSnapshot) in
             
@@ -70,6 +72,8 @@ class UberHandler {
             }
             
         }
+        // end rider cancel uber
+        
         
         
         // Rider Cancel Uber
@@ -88,6 +92,8 @@ class UberHandler {
             
         }
         
+        // end Rider Cancel
+        
         // driver cancel
         
          DBProvider.Instance.requestRefAccept.observe(DataEventType.childRemoved) { (snapshot:DataSnapshot) in
@@ -104,6 +110,7 @@ class UberHandler {
             }
             
         }
+        // End Driver Cancel
         
         
         
@@ -130,6 +137,8 @@ class UberHandler {
             
         }
         
+        //  end Driver Update location
+        
     }
     
     
@@ -138,7 +147,7 @@ class UberHandler {
     func requestUber(latitude:Double,longitude:Double)  {
         let data:Dictionary<String,Any>=[Constants.NAME:rider,Constants.LATITUDE:latitude,Constants.LONGITUDE:longitude]
         
-    DBProvider.Instance.requestRef.childByAutoId().setValue(data)
+     DBProvider.Instance.requestRef.childByAutoId().setValue(data)
         
         
     }
@@ -146,6 +155,7 @@ class UberHandler {
     
     // cancelUber
     func cancelUber()  {
+        print("Rider ID Is \(rider_id)")
         DBProvider.Instance.requestRef.child(rider_id).removeValue()
     }
     

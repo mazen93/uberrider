@@ -9,16 +9,23 @@
 import Foundation
 import Firebase
 class DBProvider {
+    
+    
     private static let _instance=DBProvider()
     static var Instance:DBProvider{
         return _instance
     }
+    
+    
+    
     // database refrence
     
     var dbRef:DatabaseReference{
         return Database.database().reference()
     }
     
+    
+    // MARK : Ref -> rider
     var ridersRef:DatabaseReference{
         return dbRef.child(Constants.RIDERS)
     }
@@ -37,6 +44,10 @@ class DBProvider {
         return dbRef.child(Constants.UBER_ACCEPTED)
     }
     
+    
+    
+    
+    // user table child
     func saveUser(ID:String,EMAIL:String,PASSWORD:String)  {
         let data:Dictionary<String,Any>=[Constants.EMAIL:EMAIL,Constants.PASSWORD:PASSWORD,Constants.isRider:true]
         
